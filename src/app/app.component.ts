@@ -8,6 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Angular-Material-Tutorial-V2';
 
-  public notifications = 10;
-  public notificationsZero = 0;
+  public showSpinner = false;
+
+  loadData() {
+    this.showSpinner = true;
+    setTimeout(() => {
+      this.showSpinner = false;
+    }, 5000);
+  }
 }
