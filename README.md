@@ -2,8 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
-## Angular New-App-Setup
-Step1: ng new <AppName> --style=scss --routing
+## Angular Mat-Setup
+Step2: ng add @angular/material [This single cmd will help you to install Angular-MAT-App]
+
 
 ## Development server
 
