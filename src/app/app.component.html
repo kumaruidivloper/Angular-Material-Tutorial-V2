@@ -1,36 +1,50 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-head">
   <mat-card>
-    <h4>Typography</h4>
+    <h4>Mat-Button</h4>
   </mat-card>
 </div>
 <div class="container-content">
   <mat-card>
-    <div class="mat-display-4">This is display 4</div>
-    <div class="mat-display-3">This is display 3</div>
-    <div class="mat-display-2">This is display 2</div>
-    <div class="mat-display-1">This is display 1</div>
+    <label>Default Button</label>
+    <button mat-button class="ml-10">Click Me!</button> <br><br>
+    <label>Raised Button</label>
+    <button mat-raised-button class="ml-10">Click Me!</button> <br><br>
+    <label>Flat Button</label>
+    <button mat-flat-button class="ml-10">Click Me!</button> <br><br>
+    <label>Stroked Button</label>
+    <button mat-stroked-button class="ml-10">Click Me!</button> <br><br>
   </mat-card>
 
   <mat-card class="mt-35">
-    <div class="mat-headline">This is a heading for h1</div>
-    <div class="mat-title">This is a heading for h2</div>
-    <div class="mat-subheading-2">This is a heading for h3</div>
-    <div class="mat-subheading-1">This is a heading for h4</div>
+      <label>Default Icon Button</label>
+      <button mat-icon-button class="ml-10">Icon</button> <br><br>
+      <label>Default Fab Button</label>
+      <button mat-fab class="ml-10">Fab</button> <br><br>
+      <label>Default Mini-Fab Button</label>
+      <button mat-mini-fab class="ml-10">MiniFab</button> <br><br>
   </mat-card>
 
   <mat-card class="mt-35">
-    <div class="mat-body-1">This is body text</div>
-    <div class="mat-body-2">This is bold body text</div>
-    <div class="mat-caption">This is caption text</div>
-  </mat-card>
+      <label>Button Color Primary</label>
+      <button color="primary" mat-button class="ml-10">Primary</button> <br><br>
+      <label>Button Color Accent</label>
+      <button color="accent" mat-button class="ml-10">Accent</button> <br><br>
+      <label>Button Color Warn</label>
+      <button color="warn" mat-button class="ml-10">Warn</button> <br><br>
 
-  <mat-card class="mt-35">
-    <div class="mat-typography">
-      <h1>This is a heading for h1</h1>
-      <h2>This is a heading for h2</h2>
-      <h3>This is a heading for h3</h3>
-      <h4>This is a heading for h4</h4>
-    </div>
+      <label>Button Color Primary Raised</label>
+      <button color="primary" mat-raised-button class="ml-10">Primary</button> <br><br>
+      <label>Button Color Accent Raised</label>
+      <button color="accent" mat-raised-button class="ml-10">Accent</button> <br><br>
+      <label>Button Color Warn Raised</label>
+      <button color="warn" mat-raised-button class="ml-10">Warn</button> <br><br>
+
+      <label>Button Color Primary DisableRipple</label>
+      <button color="primary" mat-button disableRipple class="ml-10">Primary</button> <br><br>
+      <label>Button Color Accent DisableRipple</label>
+      <button color="accent" mat-button disableRipple class="ml-10">Accent</button> <br><br>
+      <label>Button Color Warn DisableRipple</label>
+      <button color="warn" mat-button disableRipple class="ml-10">Warn</button> <br><br>
   </mat-card>
 </div>
