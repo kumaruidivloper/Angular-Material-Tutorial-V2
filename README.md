@@ -2,9 +2,106 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.0.
 
-## Angular Mat-Setup
-Step2: ng add @angular/material [This single cmd will help you to install Angular-MAT-App]
+## Angular Mat-Module-setup
+Step3: Create module [ng g m material]
+Step4: 
+Code For material.module.ts
+import { NgModule } from '@angular/core';
+import {
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatStepperModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  ErrorStateMatcher,
+  ShowOnDirtyErrorStateMatcher,
+  MatFormFieldModule
+} from '@angular/material';
 
+import { CdkTableModule } from '@angular/cdk/table';
+import { MatBadgeModule } from '@angular/material/badge';
+
+const MaterialComponents = [
+  CdkTableModule,
+  MatBadgeModule,
+  MatAutocompleteModule,
+  MatButtonModule,
+  MatButtonToggleModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatChipsModule,
+  MatStepperModule,
+  MatDatepickerModule,
+  MatDialogModule,
+  MatDividerModule,
+  MatExpansionModule,
+  MatGridListModule,
+  MatIconModule,
+  MatInputModule,
+  MatListModule,
+  MatMenuModule,
+  MatNativeDateModule,
+  MatPaginatorModule,
+  MatProgressBarModule,
+  MatProgressSpinnerModule,
+  MatRadioModule,
+  MatRippleModule,
+  MatSelectModule,
+  MatSidenavModule,
+  MatSliderModule,
+  MatSlideToggleModule,
+  MatSnackBarModule,
+  MatSortModule,
+  MatTableModule,
+  MatTabsModule,
+  MatToolbarModule,
+  MatTooltipModule,
+  MatFormFieldModule
+];
+
+@NgModule({
+  // imports Automatically done by Angular
+  // imports: [MaterialComponents],
+  exports: [MaterialComponents],
+  providers: [
+    {provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}
+  ]
+})
+export class MaterialModule { }
+
+Step5: In app.module.ts
+Add below code
+import { MaterialModule } from './material/material.module';
+imports: [
+    MaterialModule
+  ],
 
 ## Development server
 
