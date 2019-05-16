@@ -1,22 +1,22 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-head">
   <mat-card>
-    <h4>Mat-Progress-Spinner</h4>
+    <h4>Mat-Toolbar</h4>
   </mat-card>
 </div>
 <div class="container-content">
   <mat-card>
-     <h4>Progress Spinner 40%</h4>
-     <mat-progress-spinner value="40"></mat-progress-spinner> <br><br>  
+     <mat-toolbar>
+       <div>Angular Material Nav Bar</div>
+     </mat-toolbar><br><br>
 
-     <h4>Progress Spinner 100%</h4>
-     <mat-progress-spinner value="100"></mat-progress-spinner> <br><br>
-     
-     <h4>Progress Spinner Animation</h4>
-     <mat-spinner></mat-spinner> <br><br>
-
-     <h4>Progress Spinner Data Load</h4>
-     <mat-spinner *ngIf="showSpinner" class="mb-20"></mat-spinner>
-     <button mat-raised-button color="accent" (click)="loadData()">Load Data</button>
+     <mat-toolbar color="accent" class="navbar">
+        <div>Angular Material Nav Bar</div>
+        <div>
+          <span>Home</span>
+          <span>About</span>
+          <span>Services</span>
+        </div>
+      </mat-toolbar>
   </mat-card>
 </div>
