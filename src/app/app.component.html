@@ -1,50 +1,13 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-head">
   <mat-card>
-    <h4>Mat-Button-Toggle</h4>
+    <h4>Mat-Icon</h4>
   </mat-card>
 </div>
 <div class="container-content">
+  <!--https://material.io/tools/icons/-->
   <mat-card>
-    <label>Default Button Toggle</label>
-    <mat-button-toggle class="ml-10" #toggleBtn>Toggle</mat-button-toggle>
-    {{toggleBtn.checked}} <br><br>
-
-    <label>Default Button Toggle Checked</label>
-    <mat-button-toggle class="ml-10" checked #toggleBtn1>Toggle</mat-button-toggle>
-    {{toggleBtn1.checked}} <br><br>
-
-    <label>Default Button Toggle Checked Disable Ripple Effect</label>
-    <mat-button-toggle class="ml-10" checked disableRipple #toggleBtn2>Toggle</mat-button-toggle>
-    {{toggleBtn2.checked}} <br><br>
-
-    <label>Default Button Toggle Disable</label>
-    <mat-button-toggle class="ml-10" disabled #toggleBtn3>Toggle</mat-button-toggle>
-    {{toggleBtn3.checked}} <br><br>
-  </mat-card>
-
-  <mat-card class="mt-35">
-    <label>Default Button Toggle Group</label>
-    <mat-button-toggle-group class="ml-10">
-      <mat-button-toggle value="angular">Angular</mat-button-toggle>
-      <mat-button-toggle value="react">React</mat-button-toggle>
-      <mat-button-toggle value="vue">Vue</mat-button-toggle>
-    </mat-button-toggle-group> <br><br>
-
-    <label>Default Button Toggle Group Get Selected Value</label>
-    <mat-button-toggle-group class="ml-10" #toggleGroup="matButtonToggleGroup">
-      <mat-button-toggle value="angular">Angular</mat-button-toggle>
-      <mat-button-toggle value="react">React</mat-button-toggle>
-      <mat-button-toggle value="vue">Vue</mat-button-toggle>
-    </mat-button-toggle-group> 
-    {{toggleGroup.value}}<br><br>
-
-    <label>Default Button Toggle Group Get Multiple Selected Value</label>
-    <mat-button-toggle-group class="ml-10" #toggleGroup1="matButtonToggleGroup" multiple>
-      <mat-button-toggle value="angular">Angular</mat-button-toggle>
-      <mat-button-toggle value="react">React</mat-button-toggle>
-      <mat-button-toggle value="vue">Vue</mat-button-toggle>
-    </mat-button-toggle-group> 
-    {{toggleGroup1.value}}<br><br>
+    <mat-icon>grade</mat-icon>
+    <mat-icon color="primary">grade</mat-icon>    
   </mat-card>
 </div>
