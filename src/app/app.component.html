@@ -1,50 +1,50 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-head">
   <mat-card>
-    <h4>Mat-Button</h4>
+    <h4>Mat-Button-Toggle</h4>
   </mat-card>
 </div>
 <div class="container-content">
   <mat-card>
-    <label>Default Button</label>
-    <button mat-button class="ml-10">Click Me!</button> <br><br>
-    <label>Raised Button</label>
-    <button mat-raised-button class="ml-10">Click Me!</button> <br><br>
-    <label>Flat Button</label>
-    <button mat-flat-button class="ml-10">Click Me!</button> <br><br>
-    <label>Stroked Button</label>
-    <button mat-stroked-button class="ml-10">Click Me!</button> <br><br>
+    <label>Default Button Toggle</label>
+    <mat-button-toggle class="ml-10" #toggleBtn>Toggle</mat-button-toggle>
+    {{toggleBtn.checked}} <br><br>
+
+    <label>Default Button Toggle Checked</label>
+    <mat-button-toggle class="ml-10" checked #toggleBtn1>Toggle</mat-button-toggle>
+    {{toggleBtn1.checked}} <br><br>
+
+    <label>Default Button Toggle Checked Disable Ripple Effect</label>
+    <mat-button-toggle class="ml-10" checked disableRipple #toggleBtn2>Toggle</mat-button-toggle>
+    {{toggleBtn2.checked}} <br><br>
+
+    <label>Default Button Toggle Disable</label>
+    <mat-button-toggle class="ml-10" disabled #toggleBtn3>Toggle</mat-button-toggle>
+    {{toggleBtn3.checked}} <br><br>
   </mat-card>
 
   <mat-card class="mt-35">
-      <label>Default Icon Button</label>
-      <button mat-icon-button class="ml-10">Icon</button> <br><br>
-      <label>Default Fab Button</label>
-      <button mat-fab class="ml-10">Fab</button> <br><br>
-      <label>Default Mini-Fab Button</label>
-      <button mat-mini-fab class="ml-10">MiniFab</button> <br><br>
-  </mat-card>
+    <label>Default Button Toggle Group</label>
+    <mat-button-toggle-group class="ml-10">
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group> <br><br>
 
-  <mat-card class="mt-35">
-      <label>Button Color Primary</label>
-      <button color="primary" mat-button class="ml-10">Primary</button> <br><br>
-      <label>Button Color Accent</label>
-      <button color="accent" mat-button class="ml-10">Accent</button> <br><br>
-      <label>Button Color Warn</label>
-      <button color="warn" mat-button class="ml-10">Warn</button> <br><br>
+    <label>Default Button Toggle Group Get Selected Value</label>
+    <mat-button-toggle-group class="ml-10" #toggleGroup="matButtonToggleGroup">
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group> 
+    {{toggleGroup.value}}<br><br>
 
-      <label>Button Color Primary Raised</label>
-      <button color="primary" mat-raised-button class="ml-10">Primary</button> <br><br>
-      <label>Button Color Accent Raised</label>
-      <button color="accent" mat-raised-button class="ml-10">Accent</button> <br><br>
-      <label>Button Color Warn Raised</label>
-      <button color="warn" mat-raised-button class="ml-10">Warn</button> <br><br>
-
-      <label>Button Color Primary DisableRipple</label>
-      <button color="primary" mat-button disableRipple class="ml-10">Primary</button> <br><br>
-      <label>Button Color Accent DisableRipple</label>
-      <button color="accent" mat-button disableRipple class="ml-10">Accent</button> <br><br>
-      <label>Button Color Warn DisableRipple</label>
-      <button color="warn" mat-button disableRipple class="ml-10">Warn</button> <br><br>
+    <label>Default Button Toggle Group Get Multiple Selected Value</label>
+    <mat-button-toggle-group class="ml-10" #toggleGroup1="matButtonToggleGroup" multiple>
+      <mat-button-toggle value="angular">Angular</mat-button-toggle>
+      <mat-button-toggle value="react">React</mat-button-toggle>
+      <mat-button-toggle value="vue">Vue</mat-button-toggle>
+    </mat-button-toggle-group> 
+    {{toggleGroup1.value}}<br><br>
   </mat-card>
 </div>
