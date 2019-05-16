@@ -1,13 +1,28 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="container-head">
   <mat-card>
-    <h4>Mat-Icon</h4>
+    <h4>Mat-Badges</h4>
   </mat-card>
 </div>
 <div class="container-content">
-  <!--https://material.io/tools/icons/-->
   <mat-card>
-    <mat-icon>grade</mat-icon>
-    <mat-icon color="primary">grade</mat-icon>    
+     <span matBadge="5">Notifications</span><br><br>
+     <span matBadge="5" matBadgePosition="below before">Notifications</span><br><br>
+     <span matBadge="5" matBadgePosition="below after">Notifications</span><br><br>
+     <span matBadge="5" matBadgePosition="above before">Notifications</span><br><br>
+
+     <span matBadge="5" matBadgeSize="small">Notifications</span><br><br>
+     <span matBadge="5" matBadgeSize="medium">Notifications</span><br><br>
+     <span matBadge="5" matBadgeSize="large">Notifications</span><br><br> 
+
+     <span matBadge="5" matBadgeColor="primary">Notifications</span><br><br>
+     <span matBadge="5" matBadgeColor="accent">Notifications</span><br><br>
+     <span matBadge="5" matBadgeColor="warn">Notifications</span><br><br>
+     
+     <span matBadge="5" matBadgeColor="primary" matBadgeOverlap="false">Notifications</span><br><br>
+
+     <span [matBadge]="notifications" matBadgeColor="accent" matBadgeOverlap="false">Notifications</span><br><br>
+
+     <span [matBadge]="notificationsZero" matBadgeColor="warn" [matBadgeHidden]="notificationsZero === 0">Notifications</span><br><br>  
   </mat-card>
 </div>
